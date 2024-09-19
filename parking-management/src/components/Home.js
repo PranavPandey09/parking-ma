@@ -1,5 +1,8 @@
 import React from 'react';
 import './Home.css';
+ // eslint-disable-next-line
+import backgroundImage from '../assets/background.jpg';
+
 
 const Home = () => {
   return (
