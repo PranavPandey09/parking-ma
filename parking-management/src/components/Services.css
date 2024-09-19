@@ -1,0 +1,86 @@
+/* Reset margin and padding on the body and html to avoid extra white gaps */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #f6f4f4;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.service-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-form {
+  flex: 1;
+  margin-left: 20px; /* Reduced margin for better spacing */
+}
+
+.service-form h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.service-form select,
+.service-form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.service-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.park-button {
+  background-color: red;
+  color: white;
+}
+
+.unpark-button {
+  background-color: green;
+  color: white;
+}
+
+.floors {
+  margin-top: 20px;
+}
+
+.slots {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.slot {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.occupied {
+  background-color: #ffcccb;
+}

@@ -1,0 +1,115 @@
+/* .navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #a90606;
+  padding: 15px 20px;
+  color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  color: #f4f4f4;
+} */
+
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background color */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar:hover {
+  background-color: #444; /* Slightly lighter background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo and Navbar Links */
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #333; /* Dark text color on hover */
+  background-color: #fff; /* White background on hover */
+}
+
+/* Active Link */
+.navbar .nav-links .active {
+  color: #007bff; /* Highlight active link */
+  background-color: #fff; /* White background for active link */
+}
+
+/* Mobile Menu */
+.navbar .mobile-menu {
+  display: none; /* Hide mobile menu by default */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar .nav-links.show {
+    display: flex;
+  }
+
+  .navbar .mobile-menu {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5em;
+  }
+}
