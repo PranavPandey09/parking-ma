@@ -34,8 +34,9 @@ const app = express();
 const port = 5000;
 
 
-
-app.use(cors());
+app.use(cors({
+  origin: 'https://parking-ma-ohrm.vercel.app'  // Allow only your frontend origin
+}));
 app.use(express.json());
 
 // Connect to MongoDB Atlas
